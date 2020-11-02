@@ -15,4 +15,9 @@ contract Name_list {
         last_id += 1;
     }
 
+    function getName(string memory name)public payable{
+        names[name] = last_id;
+        last_id += 1;
+    }
+
 }
